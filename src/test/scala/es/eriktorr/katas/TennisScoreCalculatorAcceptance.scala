@@ -7,7 +7,9 @@ class TennisScoreCalculatorAcceptance extends FlatSpec with Matchers with TableD
 
   private val pointsPlayed = Table(
     ("player1Points", "player2Points", "score"),
-    (3, 3, "deuce"))
+    (3, 3, "deuce"),
+    (4, 5, "advantage player 2"),
+    (6, 5, "advantage player 1"))
 //    (0, 15, "love-fifteen"))
 
   "Tennis score calculator" should "convert two integer to a tennis-style score" in {
